@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire Collaboratif Redis</title>
+  <style>
+    body { font-family: Arial; max-width: 500px; margin: 40px auto; }
+    input { width: 100%; margin: 10px 0; padding: 8px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h2>🧑‍🤝‍🧑 Formulaire collaboratif (Redis + WebSocket)</h2>
+
+  <label>Nom</label>
+  <input id="nom" type="text" placeholder="Entrez un nom" />
+
+  <label>Prénom</label>
+  <input id="prenom" type="text" placeholder="Entrez un prénom" />
+
+  <label>Email</label>
+  <input id="email" type="email" placeholder="Entrez un email" />
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
