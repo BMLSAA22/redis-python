@@ -1,0 +1,10 @@
+{
+  "name": "Redis TP",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "sudo apt update && sudo apt install -y redis-server",
+  "forwardPorts": [6379],
+  "remoteUser": "vscode"
+}
