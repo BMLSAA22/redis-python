@@ -2,7 +2,7 @@
 # Variables
 # ----------------------------
 FLASK_APP=app.py
-NODE_SERVER=front-app/server.js
+NODE_SERVER=server.js
 
 # ----------------------------
 # Redis
@@ -39,10 +39,10 @@ run-flask:
 # Node.js (Formulaire collaboratif)
 # ----------------------------
 install-node-deps:
-	npm install express socket.io redis
+	cd front-app && npm install express socket.io redis
 
 run-node:
-	node $(NODE_SERVER) &
+	cd front-app && node $(NODE_SERVER) &
 
 setup: install-redis install-python-deps install-node-deps start-redis
 
