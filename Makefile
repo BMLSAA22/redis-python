@@ -18,10 +18,10 @@ stop-redis:
 	sudo systemctl stop redis-server
 
 restart-redis:
-	sudo systemctl restart redis-server
+	sudo service redis-server start
 
 status-redis:
-	sudo systemctl status redis-server
+	sudo service redis-server status
 
 test-redis:
 	redis-cli ping
