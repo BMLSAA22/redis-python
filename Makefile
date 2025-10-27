@@ -11,8 +11,7 @@ install-redis:
 	sudo apt update && sudo apt install -y redis-server
 
 start-redis:
-	sudo systemctl start redis-server
-	sudo systemctl enable redis-server
+	sudo service redis-server start
 
 stop-redis:
 	sudo systemctl stop redis-server
